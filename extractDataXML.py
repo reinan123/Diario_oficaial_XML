@@ -11,10 +11,10 @@ def obter_arquivos_xml(diretorio):
             ret.append(os.path.join(diretorio, arq))
 
 def arqsXML():
-    identificacao = Minfra = secao = tipo_documento = data = publciacao =None
+    identificacao = minfra = secao = tipo_documento = data = publciacao =None
     listaDic = []
     dic = {
-        'orgao': Minfra,
+        'orgao': minfra,
         'secao': secao,
         'tipo_documento': tipo_documento,
         'texto': publciacao,
@@ -50,7 +50,7 @@ def arqsXML():
                     dic['texto'] = publciacao
 
 
-        csvXml = pd.DataFrame({'Orgão': [Minfra], 'Identificação': [identificacao],
+        csvXml = pd.DataFrame({'Orgão': [minfra], 'Identificação': [identificacao],
                                'Tipo Documento ': [tipo_documento], 'Seção': [secao],
                                'Data': [data], 'Texto': [publciacao]})
 
