@@ -12,8 +12,6 @@ def obter_arquivos_xml(diretorio):
 
 def arqsXML():
     identificacao = Minfra = secao = tipo_documento = data = publciacao =None
-    global lista
-    lista = []
     listaDic = []
     dic = {
         'orgao': Minfra,
@@ -65,4 +63,3 @@ def arqsXML():
 
 obter_arquivos_xml('C:\\Users\\reinan.oliveira\\Downloads\\2020-02-28-DO1')
 arqsXML()
-#salvarCSV()
